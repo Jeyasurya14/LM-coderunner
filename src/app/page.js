@@ -122,6 +122,9 @@ export default function Home() {
                             Read the Docs
                         </Link>
                     </div>
+                    <p className="text-xs text-muted-foreground/60 mt-2">
+                        Windows may show a SmartScreen warning — click <span className="text-muted-foreground font-medium">"More info" → "Run anyway"</span> to install.
+                    </p>
 
                     {/* Minimalist Mockup Image Container */}
                     <div className="w-full max-w-5xl rounded-xl overflow-hidden border border-border/40 shadow-2xl bg-card">
