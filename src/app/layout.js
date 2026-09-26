@@ -7,6 +7,11 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jet
 export const metadata = {
   title: 'LearnMade CodeRunner | Fast IDE Alternative',
   description: 'A professional, lightweight, Windows-first desktop application for running code snippets. Built for students, DSA learners, and developers.',
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 };
 
 export default function RootLayout({ children }) {

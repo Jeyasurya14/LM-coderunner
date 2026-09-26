@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" fill="none">
+  <!-- Icon mark: white vertical bar with rounded top-right -->
+  <path d="M12 8 Q12 4 16 4 L24 4 Q28 4 28 8 L28 44 Q28 48 24 48 L16 48 Q12 48 12 44 Z" fill="white"/>
+  <!-- Rounded top-right cap (the curved top of the L mark) -->
+  <path d="M28 4 Q42 4 42 18 Q42 28 32 30 L28 30 L28 4 Z" fill="white"/>
+  <!-- Blue circle (lower right dot) -->
+  <circle cx="44" cy="44" r="13" fill="#29AAED"/>
+  <!-- Separator line -->
+  <line x1="72" y1="12" x2="72" y2="52" stroke="#333" stroke-width="1"/>
+  <!-- LEARN text in white -->
+  <text x="82" y="38" font-family="'Inter','Helvetica Neue','Arial',sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="white">LEARN</text>
+  <!-- MADE text in blue -->
+  <text x="160" y="38" font-family="'Inter','Helvetica Neue','Arial',sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="#29AAED">MADE</text>
+</svg>

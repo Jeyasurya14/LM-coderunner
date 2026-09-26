@@ -7,6 +7,7 @@ import {
     GitBranch, Code2, Cpu, Globe, ChevronDown
 } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
     const [isDownloading, setIsDownloading] = useState(false);
@@ -47,7 +48,7 @@ export default function Home() {
             <header className={`fixed top-0 w-full z-50 transition-all duration-200 ${scrolled ? 'bg-background/80 backdrop-blur-md border-b border-border' : 'bg-transparent'}`}>
                 <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
                     <div className="flex items-center">
-                        <Image src="/logo.png" alt="LearnMade" width={130} height={36} className="object-contain" priority />
+                        <Image src="/logo.png" alt="LearnMade" width={40} height={40} className="object-contain rounded-lg" priority />
                     </div>
 
                     <nav className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
@@ -117,9 +118,9 @@ export default function Home() {
                                 <><Download className="w-4 h-4" /> Download for Windows</>
                             )}
                         </button>
-                        <button className="w-full sm:w-auto flex items-center justify-center gap-2 h-11 px-8 rounded-md font-medium text-foreground bg-background hover:bg-secondary border border-border transition-colors">
+                        <Link href="/docs" className="w-full sm:w-auto flex items-center justify-center gap-2 h-11 px-8 rounded-md font-medium text-foreground bg-background hover:bg-secondary border border-border transition-colors">
                             Read the Docs
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Minimalist Mockup Image Container */}
@@ -209,13 +210,11 @@ export default function Home() {
             <footer className="border-t border-border/40 bg-background py-12">
                 <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center">
-                        <Image src="/logo.png" alt="LearnMade" width={110} height={30} className="object-contain" />
+                        <Image src="/logo.png" alt="LearnMade" width={32} height={32} className="object-contain rounded-md" />
                     </div>
                     <div className="flex gap-6">
-                        <a href="#" className="hover:text-foreground transition-colors">Twitter</a>
-                        <a href="https://github.com/learnmade" className="hover:text-foreground transition-colors">GitHub</a>
-                        <a href="#" className="hover:text-foreground transition-colors">Terms</a>
-                        <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
+                        <a href="/terms" className="hover:text-foreground transition-colors">Terms</a>
+                        <a href="/privacy" className="hover:text-foreground transition-colors">Privacy</a>
                     </div>
                 </div>
             </footer>
