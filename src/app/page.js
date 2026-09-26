@@ -25,8 +25,8 @@ export default function Home() {
         setIsDownloading(true);
 
         const link = document.createElement('a');
-        link.href = '/LearnMade-CodeRunner-Setup.exe';
-        link.setAttribute('download', 'LearnMade-CodeRunner-Setup.exe');
+        link.href = 'https://github.com/Jeyasurya14/LM-coderunner/releases/latest/download/LearnMadeCodeRunner-Setup.exe';
+        link.setAttribute('download', 'LearnMadeCodeRunner-Setup.exe');
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
