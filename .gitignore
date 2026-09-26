@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large installer binaries — host on GitHub Releases instead
+/public/*.exe
+/public/*.msi
